@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        #scoreBoard {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="scoreBoard">
+        <div>Current Score: <span id="currentScore">0</span></div>
+        <div>Highest Score: <span id="highestScore">0</span></div>
+    </div>
+    <canvas id="pingPongCanvas" width="800" height="500"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
